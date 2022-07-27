@@ -16,5 +16,7 @@ Very_Smart_TV = [4000000, 3.5, 87]
 
 # Using sort function
 arr = [Indomie, Laptop, Aqua, Smart_TV, Headphone, Very_Smart_TV]
-arr.sort()
+arr.sort(key=lambda x: x[1] and x[2] and x[0])
+
+# sorted(arr, key=lambda item: item[1])
 print(arr)
